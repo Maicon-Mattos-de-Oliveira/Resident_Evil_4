@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.imagens-slider {
+    position: relative;
+    height: 100vh;
+    width: 100vw; /* Certifique-se de que o slider ocupe 100% da largura da tela */
+    display: flex;
+    align-items: center;
+}
+
+.imagens-slider .slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh; /* Altere para 100vh para garantir que a imagem ocupe 100% da altura da viewport */
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.imagens-slider .slide.mostrar {
+    opacity: 1;
+}
+
+/* Seus estilos de imagem */
+.slide-leon {
+    background-image: url(../imagen/LEON.jpg);
+}
+
+.slide-ashley {
+    background-image: url(../imagen/ASHLEY.jpg);
+}
+
+.slide-ada {
+    background-image: url(../imagen/Ada\ Wong.jpg);
+}
+
+.slide-luiz {
+    background-image: url(../imagen/LUIZ.jpg);
+}
+
+/* Restante do código... */
+
+
+.seta-voltar, .seta-avancar {
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-voltar {
+    left: 4%;
+    transform: rotateY(180deg);
+}
+
+.seta-avancar {
+    right: 4%;
+}
+
+.seta-voltar .imagem-seta, .seta-avancar .imagem-seta {
+    width: 35px;
+    height: 35px;
+}
+
+.opacidade {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.conteudo {
+    background-color: #FFFF;
+    margin-left: 150px;
+    padding: 25px 20px;
+    width: 410px;
+    border-radius: 20px;
+}
+
+.conteudo .titulo {
+    margin-bottom: 30px;
+    font-size: 2rem;
+   font-weight: 100;
+   font-family:"resident_evil_4_remake_font_by_snakeyboy_df7kacs.tff";
+}
+
+.conteudo .texto {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family:"BLUEHIGD.TTF";
+    
+}
+
+.conteudo .botao{
+    font-size: 30px;
+    font-family:"resident_evil_4_remake_font_by_snakeyboy_df7kacs.tff";
+}
+
+.botao.azul {
+    color:#1b2838;
+}
+
+.botao.amarelo {
+    color: #794010;
+}
+
+.botao.bordo {
+    color: #65141e;
+}
+
+botao.marron {
+    color:#6e433e;
+}
